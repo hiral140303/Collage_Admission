@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<head>
+    <title>Application Submitted</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+</head>
+<body>
+    {% if messages %}
+  <ul class="messages">
+    {% for message in messages %}
+      <li class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
+        {{ message }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}  
+
+    <h1 style="text-align:center;">Thank you for applying!</h1><br>
+    <p style="text-align:center;">We will get back to you soon.</p>
+     <!-- Auto-hide messages JavaScript -->
+    <script>
+      setTimeout(() => {
+        document.querySelectorAll('.alert').forEach(el => el.style.display = 'none');
+      }, 3000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+  /* Gradient background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #2193b0, #6dd5ed);
+            color: #333;
+        }
+
+        .form-card {
+            max-width: 650px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #006080;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        .form-group label {
+            width: 20%;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 80px;
+        }
+
+        button[type="submit"] {
+            width: 100px;
+            padding: 14px;
+            background-color: #0099cc;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-left: 250px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #007299;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            .form-group {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .form-group label,
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                width: 100%;
+            }
+        }
+
+.messages {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.alert {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert-error, .alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
